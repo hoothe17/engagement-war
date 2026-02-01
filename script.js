@@ -36,3 +36,15 @@ function calculate() {
     🏆 <b>FINAL SCORE: ${finalScore.toFixed(1)}</b>
   `;
 }
+import { db } from "./firebase.js";
+import {
+  doc,
+  getDoc,
+  setDoc,
+  updateDoc,
+  collection,
+  query,
+  orderBy,
+  getDocs,
+  serverTimestamp
+} from "https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore.js";
